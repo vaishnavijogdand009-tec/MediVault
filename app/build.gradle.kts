@@ -1,5 +1,6 @@
 plugins {
     alias(libs.plugins.android.application)
+    id("com.google.gms.google-services")
 }
 
 android {
@@ -47,6 +48,8 @@ dependencies {
 
     // Cloud Firestore
     implementation("com.google.firebase:firebase-firestore")
+
+    implementation("com.google.firebase:firebase-storage")
 
     // QR Scanner
     implementation("com.journeyapps:zxing-android-embedded:4.3.0")

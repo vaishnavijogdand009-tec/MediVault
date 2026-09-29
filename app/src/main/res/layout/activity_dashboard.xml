@@ -14,7 +14,8 @@
         android:orientation="vertical"
         android:padding="20dp">
 
-        <!-- Header -->
+        <!-- ==================== HEADER ==================== -->
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -57,7 +58,9 @@
 
         </LinearLayout>
 
-        <!-- Emergency QR Card -->
+
+        <!-- ==================== EMERGENCY QR CARD ==================== -->
+
         <com.google.android.material.card.MaterialCardView
             android:id="@+id/cardEmergencyQR"
             android:layout_width="match_parent"
@@ -120,7 +123,9 @@
 
         </com.google.android.material.card.MaterialCardView>
 
-        <!-- Section Title -->
+
+        <!-- ==================== EMERGENCY INFORMATION ==================== -->
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -130,13 +135,17 @@
             android:textStyle="bold"
             android:layout_marginBottom="12dp" />
 
-        <!-- Emergency Information Cards -->
+
+        <!-- Emergency Information Row -->
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
 
-            <!-- Blood Group -->
+
+            <!-- ==================== BLOOD GROUP ==================== -->
+
             <com.google.android.material.card.MaterialCardView
                 android:layout_width="0dp"
                 android:layout_height="105dp"
@@ -165,7 +174,10 @@
                         android:textColor="#627D98"
                         android:textSize="12sp" />
 
+                    <!-- IMPORTANT: Firebase value goes here -->
+
                     <TextView
+                        android:id="@+id/tvBloodGroup"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Not Added"
@@ -177,7 +189,9 @@
 
             </com.google.android.material.card.MaterialCardView>
 
-            <!-- Allergies -->
+
+            <!-- ==================== ALLERGIES ==================== -->
+
             <com.google.android.material.card.MaterialCardView
                 android:layout_width="0dp"
                 android:layout_height="105dp"
@@ -208,7 +222,10 @@
                         android:textColor="#627D98"
                         android:textSize="12sp" />
 
+                    <!-- IMPORTANT: Firebase value goes here -->
+
                     <TextView
+                        android:id="@+id/tvAllergies"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Not Added"
@@ -222,7 +239,9 @@
 
         </LinearLayout>
 
-        <!-- Modules -->
+
+        <!-- ==================== MANAGE INFORMATION ==================== -->
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -233,7 +252,9 @@
             android:textSize="20sp"
             android:textStyle="bold" />
 
-        <!-- Emergency Profile -->
+
+        <!-- ==================== EMERGENCY PROFILE ==================== -->
+
         <com.google.android.material.card.MaterialCardView
             android:id="@+id/cardEmergencyProfile"
             android:layout_width="match_parent"
@@ -284,16 +305,18 @@
                 <TextView
                     android:layout_width="30dp"
                     android:layout_height="wrap_content"
+                    android:gravity="center"
                     android:text="›"
                     android:textColor="#1976D2"
-                    android:textSize="28sp"
-                    android:gravity="center" />
+                    android:textSize="28sp" />
 
             </LinearLayout>
 
         </com.google.android.material.card.MaterialCardView>
 
-        <!-- Medical Records -->
+
+        <!-- ==================== MEDICAL RECORDS ==================== -->
+
         <com.google.android.material.card.MaterialCardView
             android:id="@+id/cardMedicalRecords"
             android:layout_width="match_parent"
@@ -344,16 +367,18 @@
                 <TextView
                     android:layout_width="30dp"
                     android:layout_height="wrap_content"
+                    android:gravity="center"
                     android:text="›"
                     android:textColor="#1976D2"
-                    android:textSize="28sp"
-                    android:gravity="center" />
+                    android:textSize="28sp" />
 
             </LinearLayout>
 
         </com.google.android.material.card.MaterialCardView>
 
-        <!-- Emergency Contacts -->
+
+        <!-- ==================== EMERGENCY CONTACTS ==================== -->
+
         <com.google.android.material.card.MaterialCardView
             android:id="@+id/cardEmergencyContacts"
             android:layout_width="match_parent"
@@ -404,16 +429,18 @@
                 <TextView
                     android:layout_width="30dp"
                     android:layout_height="wrap_content"
+                    android:gravity="center"
                     android:text="›"
                     android:textColor="#1976D2"
-                    android:textSize="28sp"
-                    android:gravity="center" />
+                    android:textSize="28sp" />
 
             </LinearLayout>
 
         </com.google.android.material.card.MaterialCardView>
 
-        <!-- Documents -->
+
+        <!-- ==================== DOCUMENTS ==================== -->
+
         <com.google.android.material.card.MaterialCardView
             android:id="@+id/cardDocuments"
             android:layout_width="match_parent"
@@ -464,16 +491,18 @@
                 <TextView
                     android:layout_width="30dp"
                     android:layout_height="wrap_content"
+                    android:gravity="center"
                     android:text="›"
                     android:textColor="#1976D2"
-                    android:textSize="28sp"
-                    android:gravity="center" />
+                    android:textSize="28sp" />
 
             </LinearLayout>
 
         </com.google.android.material.card.MaterialCardView>
 
-        <!-- Settings -->
+
+        <!-- ==================== SETTINGS ==================== -->
+
         <com.google.android.material.card.MaterialCardView
             android:id="@+id/cardSettings"
             android:layout_width="match_parent"
@@ -525,10 +554,10 @@
                 <TextView
                     android:layout_width="30dp"
                     android:layout_height="wrap_content"
+                    android:gravity="center"
                     android:text="›"
                     android:textColor="#1976D2"
-                    android:textSize="28sp"
-                    android:gravity="center" />
+                    android:textSize="28sp" />
 
             </LinearLayout>
 
